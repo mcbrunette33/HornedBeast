@@ -4,4 +4,5 @@ class Footer extends React.Component {
     return <h1>Author: Michael Brunette</h1>;
   }
 }
+
 module.exports.Footer = Footer;
