@@ -20,12 +20,14 @@
 
 ## Day three
 
-- Number and name of feature:
+- Number and name of feature: Gallery of Horns
 
-- Estimate of time needed to complete:
+- Estimate of time needed to complete:3 hrs
 
-- Start time:
+- Start time:1:30pm
 
-- Finish time:
+- Finish time:5pm
 
 - Actual time needed to complete:
+
+- was able to catch up alot today. I still need to add more CSS and create flex boxes into the app. Thanks David for your help today! My friend was able to help me with a few of the problems I was having today as well.
