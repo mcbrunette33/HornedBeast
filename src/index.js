@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './footer';
-import './header';
-import './main';
+import './Footer';
+import './Header';
+import './Main';
+import data from './data.json';
 
 ReactDOM.render(
   <React.StrictMode>

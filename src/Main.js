@@ -1,6 +1,6 @@
 import React from 'react';
 import data  from "./data.json";
-import HornedBeast from './hornedbeast.js';
+import HornedBeast from './HornedBeast.js';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
@@ -17,6 +17,7 @@ class Main extends React.Component {
                 imageUrl={animal.image_url}
                 description={animal.description}
                 key={animal._id}
+                horns={animal.horns}
                 handleClick={this.props.handleClick}
               />)}
           </Row>
