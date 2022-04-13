@@ -1,7 +1,9 @@
 import React from 'react';
+import './Header.css'
+
 class Header extends React.Component {
   render() {
-    return <h1>Hello, <title>lab-01</title></h1>;
+    return <h1>Welcome to Horned Beast! <title>Horned Beast</title></h1>;
   }
 }
 module.exports.Header = Header;

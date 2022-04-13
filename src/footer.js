@@ -1,8 +1,12 @@
 import React from 'react';
+import './Footer.css'
+
 class Footer extends React.Component {
   render() {
-    return <h1>Author: Michael Brunette</h1>;
+    return (
+      <h3>Author: Michael Brunette</h3>
+    )
   }
 }
 
-module.exports.Footer = Footer;
+export default Footer;
