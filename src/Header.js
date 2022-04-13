@@ -6,4 +6,4 @@ class Header extends React.Component {
     return <h1>Welcome to Horned Beast! <title>Horned Beast</title></h1>;
   }
 }
-module.exports.Header = Header;
+export default Header;
