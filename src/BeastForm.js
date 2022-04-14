@@ -18,6 +18,7 @@ class BeastForm extends React.Component {
     if (horns) {
       let findFilteredHornedBeast = this.props.animals.filter(animal => animal.horns === horns);
       this.props.findFilteredHornedBeast(findFilteredHornedBeast);
+      // this.props.setState({hornedBeastRender: findFilteredHornedBeast});
     } else {
       this.props.findFilteredHornedBeast(this.props.animals)
     }
@@ -36,7 +37,7 @@ class BeastForm extends React.Component {
               <option value="1">1 Horn</option>
               <option value="2">2 Horns</option>
               <option value="3">3 Horns</option>
-              <option value="100">100 Horns</option>
+              <option value="4">4 Horns</option>
             </Form.Control>
           </Form.Group>
         </Form>

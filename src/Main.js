@@ -1,16 +1,24 @@
 import React from 'react';
-import data  from "./data.json";
+// import data  from "./data.json";
 import HornedBeast from './HornedBeast.js';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 class Main extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      allBeasts: this.props.data
+    }
+  }
   render() {
+    // console.log(this.state.allBeasts)
     return (
       <main>
+        <p>{this.props.test}</p>
         <Container>
           <Row>
-            {data.map((animal) =>
+            {this.props.data.map((animal) =>
               <HornedBeast
                 name = {animal.keyword}
                 title={animal.title}
@@ -18,7 +26,7 @@ class Main extends React.Component {
                 description={animal.description}
                 key={animal._id}
                 horns={animal.horns}
-                handleClick={this.props.handleClick}
+                handleClick={() => this.props.handleClick(animal)}
               />)}
           </Row>
         </Container>

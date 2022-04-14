@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import './SelectedBeast.css'
 
 
+
 class SelectedBeast extends React.Component {
   render() {
     return (
