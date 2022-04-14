@@ -14,7 +14,7 @@ class App extends React.Component {
       this.state = {
         show: false,
         beast: {},
-        hornedBeastRender: data
+        hornedBeastRender: 0
       }
     }
 
@@ -51,10 +51,21 @@ class App extends React.Component {
       hideBeast={this.hideBeastInModal}
       beast={this.state.beast}
       />
-      <Main
-      animals={this.state.hornedBeastRender}
-      handleClick={this.showBeastInModal}
-      />
+      {/* {console.log(this.state.hornedBeastRender)} */}
+      {this.state.hornedBeastRender !== 0 ? (
+        
+        <Main
+        test = {'firstmain'}
+        handleClick={this.showBeastInModal}
+        data={this.state.hornedBeastRender}
+        />
+      ) : (
+        <Main
+        test = {'secondmain'}
+        handleClick={this.showBeastInModal}
+        data={data}
+        /> 
+      )}
       <Footer />
     </div>
     );
