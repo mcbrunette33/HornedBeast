@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './Footer';
 import './Header';
 import './Main';
-import data from './data.json';
+// import data from './data.json';
 
 ReactDOM.render(
   <React.StrictMode>
