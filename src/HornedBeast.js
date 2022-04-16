@@ -30,6 +30,7 @@ class HornedBeast extends React.Component {
           {this.state.clicks}
           &hearts;
         </p>
+        <div>
         <Card
           className="container"
           style={{
@@ -52,6 +53,7 @@ class HornedBeast extends React.Component {
             </Card.Text>
           </Card.Body>
         </Card>
+        </div>
       </>
     )
   }
